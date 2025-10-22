@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday Suryansh</title>
+  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="birthday.css" />
+</head>
+<body>
+
+<!-- Balloons and Cakes -->
+<div class="balloon"></div>
+<div class="balloon"></div>
+<div class="balloon"></div>
+<div class="cake"></div>
+<div class="balloon"></div>
+<div class="cake"></div>
+
+<!-- Heading and message -->
+<div class="birthday-heading">Happy Birthday, Suryansh!</div>
+<div class="birthday-message">
+  Mera Bhai Tu Meri Jaan Hai.<br>
+  Wishing you all the happiness and brightness.<br>
+  You are truly special to me.
+</div>
+
+<!-- Cylinder with photos -->
+<div class="cylinder-container">
+  <div class="cylinder">
+    <div class="face face1"><img src="p1.jpg" alt="Photo1" /></div>
+    <div class="face face2"><img src="p2.jpg" alt="Photo2" /></div>
+    <div class="face face3"><img src="p3.jpg" alt="Photo3" /></div>
+    <div class="face face4"><img src="p4.jpg" alt="Photo4" /></div>
+    <div class="face face5"><img src="p5.jpg" alt="Photo5" /></div>
+  </div>
+</div>
+
+<!-- Music autoplay -->
+<div class="audio">
+  <audio  src="bhai.mp3" controls autoplay></audio>
+</div>
+
+<!-- Confetti canvas -->
+<canvas class="confetti"></canvas>
+
+<script>
+  // Confetti animation
+  const canvas = document.querySelector('.confetti');
+  const ctx = canvas.getContext('2d');
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  const particles = [];
+  for(let i=0; i<100; i++) {
+    particles.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      radius: Math.random() * 3 + 1,
+      color: 'hsl(' + Math.random()*360 + ',70%,70%)',
+      speed: Math.random() * 1 + 0.5
+    });
+  }
+
+  function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    particles.forEach(p => {
+      p.y += p.speed;
+      if(p.y > canvas.height) p.y = 0;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+      ctx.fillStyle = p.color;
+      ctx.fill();
+    });
+    requestAnimationFrame(animate);
+  }
+  animate();
+
+  // Resize canvas on window resize
+  window.addEventListener('resize', () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  });
+</script>
+
+</body>
+</html>

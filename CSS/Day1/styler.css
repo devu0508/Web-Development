@@ -1,0 +1,65 @@
+/* Tag Element selector */
+/* h1{
+    background-color: lightpink;
+    font-size: 40px;
+}
+ul{
+    background-color: rgb(119, 139, 46);
+}
+h2{
+    background-color: aquamarine;
+} */
+
+
+/* Id base selection #based selection */
+/* #first{
+    background-color: rgb(107, 189, 189);
+}
+#second{
+    background-color: rgb(205, 248, 255);
+} */
+
+
+/* Class based selection */
+/* .third{
+    background-color: fuchsia;
+}
+.fourth{
+    background-color: lightslategrey;
+} */
+
+
+/* Group based selection */
+/* h1,.fourth,#first{
+    background-color: teal;
+} */
+
+/* FONT */
+h1{
+   font-size: 40px; ; 
+}
+
+ul{
+    font-size: 20px;
+}
+
+li{
+    font-size: 1em;
+}
+
+/* h2{
+    font-size: 2rem;
+} */
+
+h2{
+    font-family: "Bitcount Grid Double", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 320;
+  font-style: normal;
+  
+}
+
+li{
+    /* font-size: 3vh; */
+    font-size: 80%;
+}

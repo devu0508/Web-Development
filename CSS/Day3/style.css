@@ -1,0 +1,25 @@
+h1{
+    background-color: aqua;
+}
+
+/* #firstId{
+    background-color: pink;
+}
+.classA{
+    background-color: green;
+} 
+
+h2{
+    background-color: aqua !important;
+}  */
+
+/* It overwrite inline CSS as well */
+
+h1{
+    background-color: blueviolet;
+}
+
+
+
+
+

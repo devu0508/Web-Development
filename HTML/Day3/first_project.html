@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>University Registration Form</h1>
+
+    <p>Please fill out the form</p>
+    <hr>
+    <form>
+        <h2>Personal Details</h2>
+        <label for="firstname">First Name:</label>
+        <input type="text" name="fname" id="firstname" placeholder="e.g:Arjun" required>
+
+        <br><br>
+
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="lname" id="lastname" placeholder="e.g:Kumar" required>
+
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob" id="dob" required>
+
+        <br><br>
+
+        <label>Gender:</label>
+        <br>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <br>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <br>
+        <label for="others">Others</label>
+        <input type="radio" name="gender" id="others" value="others">
+
+        <br><br>
+        
+        <label>Upload Your Photo</label>
+        <input type="file" name="file" id="file" required>
+
+
+        <hr>
+
+        <h2>Contact Information</h2>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+
+        <br><br>
+
+        <label for="pno.">Phone Number:</label>
+        <input type="pno." name="pno." id="pno." required> 
+
+        <br><br>
+
+        <label for="Address">Mailing Address:</label>
+        <br>
+        <textarea name="Address" id="Address" rows="5" column="20"></textarea>
+         
+        <hr>
+
+        <h2>Academic Information</h2>
+
+        <label for="course">Select Your Course:</label>
+        <select name="course" id="course">
+            <option value="CSE">CSE</option>
+            <option value="CSE(AI&ML)">CSE(AI&ML)</option>
+            <option value="CSDS">CSDS</option>
+            <option value="ELECTRONICS">ELECTRONICS</option>
+            <option value="ELECTRICAL">ELECTRICAL</option>
+            <option value="ELECTRICAL">ELECTRICAL</option>
+            <option value="MECHANICAL">MECHANICAL</option>
+            <option value="CIVIL">CIVIL</option>
+        </select>
+        <br><br>
+
+        <label>Extra Curricular Activities:</label>
+        <br><br>
+        <label for="sports">Sports</label>
+        <input type="checkbox" name="intrest" id="sports" value="sports">
+        <br><br>
+        <label for="Music & Arts">Music & Arts</label>
+        <input type="checkbox" name="intrest" id="Music & Arts" value="Music & Arts">
+        <br><br>
+        <label for="Technology Clubs">Technology Clubs</label>
+        <input type="checkbox" name="intrest" id="Technology Clubs" value="Technology Clubs">
+        <br><br>
+        <label for="Volunteering">Volunteering</label>
+        <input type="checkbox" name="intrest" id="Volunteering" value="Volunteering">
+        <br><br>
+
+        <hr>
+
+        <h2>Create Your Account</h2>
+        <label for="password">Password:</label>
+        <input type="password" name="userPassword" id="password" required>
+        <br><br>
+
+        <label for="course">Security Question:</label>
+        <select name="course" id="course">
+            <option value="pet name">What was your first pet's name?</option>
+            <option value="fbook">What's your favorite book name?</option>
+            <option value="fplace">What's your favorite place to visit?</option>
+        </select>
+
+        <br><br>
+
+        <label for="securityanswer">Security Answer:</label>
+        <input type="text" name="securityanswer" id="securityanswer" required>
+
+        <br><br>
+
+        <label for="t&c">I agree to the Terms and Conditions</label>
+        <input type="checkbox" name="t&c" id="t&c" required>
+
+        <br><br>
+
+        <hr>
+        
+        <button type="submit">Register</button>
+        <button type="reset">Clear Form</button>
+
+    </form>
+    
+</body>
+</html>

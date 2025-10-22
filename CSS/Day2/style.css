@@ -1,0 +1,36 @@
+h1{
+    background-color: rgb(255, 25, 0);
+    /* height: 300px; */
+    width: 300px;
+
+    /* border-width: 15px;
+    border-style: solid;
+    border-color: rgba(5, 231, 39, 0.648); */
+
+    /* border: 10px solid green;
+    padding: 7px;
+    margin: 30px; */
+
+    border-top: 10px solid black;
+    /* padding-left: 50px; */
+    /* padding: 10px 20px 30px 40px; */
+    padding: 20px 40px;
+    /* margin-top: 50px; */
+    margin: 10px 20px 30px 40px;
+
+    border-radius: 30px;
+
+
+}
+
+h2{
+    background-color: pink;
+    border: 2px solid rgb(12, 12, 199);
+}
+
+p{
+    background-color: greenyellow;
+    padding: 20px;
+    border: 5px soild rgb(197, 9, 197);
+    margin: 15px;
+}

@@ -1,0 +1,62 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    background-color: rgba(4, 1, 28, 0.92);
+    font-size: 25px;
+}
+.container{
+    display: grid;
+    height: 700px;
+    width: 700px;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    padding: 10px;
+}
+/* .Box{
+    background-color: blueviolet;
+}
+.header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.sidebar{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.content1{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+} */
+
+.box{
+    background-color: blueviolet;
+}
+.First{
+    grid-row: 1/4;
+    background-color: green;
+}
+.Second{
+    grid-column: 2/4;
+    background-color: green;
+}
+.Sixth{
+    grid-row: 2/4;
+    grid-column: 4/5;
+    background-color: green;
+}
+.Third, .Fifth, .Seventh{
+    background-color: red;
+}
+.Fourth, .Eighth{
+    background-color: orange;
+}
