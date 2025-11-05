@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angular Responsive App</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body ng-controller="MainController">
+
+  <header>
+    <h1>{{appTitle}}</h1>
+    <nav>
+      <button ng-click="setView('home')">Home</button>
+      <button ng-click="setView('form')">Form</button>
+    </nav>
+  </header>
+
+  <main>
+    <section ng-show="currentView === 'home'">
+      <h2>Welcome!</h2>
+      <p>This is the home view of your Angular app.</p>
+    </section>
+
+    <section ng-show="currentView === 'form'">
+      <h2>User Form</h2>
+      <form ng-submit="submitForm()">
+        <label>Name:</label>
+        <input type="text" ng-model="user.name" required>
+
+        <label>Email:</label>
+        <input type="email" ng-model="user.email" required>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <div ng-if="submitted">
+        <h3>Form Data</h3>
+        <p><strong>Name:</strong> {{user.name}}</p>
+        <p><strong>Email:</strong> {{user.email}}</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 My Angular App</p>
+  </footer>
+
+</body>
+</html>
